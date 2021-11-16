@@ -24,6 +24,18 @@ export default new Router({
       path: '/wordManager',
       name: 'wordManager',
       component: () => import('@/views/word/index'),
+    }, {
+      path: '/neo4j',
+      name: 'neo4j',
+      component: () => import('@/views/neo4j/index'),
+    }, {
+      path: '/excel',
+      name: 'excel',
+      component: () => import('@/views/excel/index'),
+    }, {
+      path: '/testWebSocket',
+      name: 'websocket',
+      component: () => import('@/views/websocket/index'),
     },
   ]
 })
