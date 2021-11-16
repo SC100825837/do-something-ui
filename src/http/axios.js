@@ -25,7 +25,7 @@ export default function $axios(options) {
         if (token) { //发送请求时携带token
           config.headers.token = token
         } else { //重定向到登录页面
-          router.push('/login')
+          // router.push('/login')
         }
         return config
       },
