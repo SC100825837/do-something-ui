@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Avue from '@smallwei/avue'
+import '@smallwei/avue/lib/index.css';
 //element-ui
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -10,6 +12,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 //导入API模块，并通过Vue.use(api)语句进行使用注册，这样就可以通过“this.$api.子模块.方法”的方式来调用后台接口了
 import api from "./http";
 Vue.use(api) //注册使用api
+Vue.use(Avue)
 
 //引入global模块，并通过Vue.prototype.global = global语句进行挂载，这样就可以通过this.gloabl.xx来获取全局配置了
 import global from "@/utils/global";

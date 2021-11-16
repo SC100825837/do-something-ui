@@ -10,8 +10,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@antv/g6": "^4.3.4",
+    "@grapecity/spread-sheets-vue": "^14.1.6",
+    "@handsontable/vue": "^9.0.2",
+    "@smallwei/avue": "^2.8.24",
+    "@types/vue": "^2.0.0",
     "axios": "^0.21.1",
     "element-ui": "^2.15.1",
+    "handsontable": "^9.0.2",
     "js-cookie": "^2.2.1",
     "node-sass": "^5.0.0",
     "vue": "^2.5.2",
