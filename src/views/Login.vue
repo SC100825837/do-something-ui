@@ -15,7 +15,7 @@
             login() {
                 this.$api.login.login()
                     .then(function (res) {
-                        console.log("res", res)
+                        // console.log("res", res)
                         Cookies.set('token', res.token) //放置token到Cookie
                         router.push('/')
                     }).catch(function (res) {
